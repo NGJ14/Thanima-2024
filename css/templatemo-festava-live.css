@@ -596,11 +596,14 @@ strong {
   border-radius: var(--border-radius-medium);
   display: block;
   width: 100%;
+  filter: blur(20px);
+  
 }
 
 .artists-thumb:hover .artists-hover {
   transform: translateY(0);
   opacity: 1;
+  
 }
 
 .artists-hover {
