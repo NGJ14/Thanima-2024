@@ -206,7 +206,7 @@ strong {
   transform-origin: 19px 15px;
 }
 
-.thanima_main_icon{
+.thanima_main_icon {
   margin-bottom: 80px;
   margin-top: -80px;
 }
@@ -282,19 +282,94 @@ strong {
   color: var(--primary-color);
 }
 
-.vit_logo_box{
+.vit_logo_box {
   display: flex;
 }
-.vit_logo_box img{
+.vit_logo_box img {
   height: 10vh;
   margin: 0 auto;
 }
-.footer_box{
+.footer_box {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
 }
+
+/*---------------------------------------
+  LOADER               
+-----------------------------------------*/
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.fixed {
+  position: fixed;
+}
+.top-0 {
+  top: 0px;
+}
+.left-0 {
+  left: 0px;
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.opacity-95 {
+  opacity: 0.95;
+}
+.z-50 {
+  z-index: 50;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.m42{
+  margin-top: 42vh;
+}
+.loader {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        position: relative;
+        animation: rotate 1s linear infinite
+      }
+      .loader::before , .loader::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        inset: 0px;
+        border-radius: 50%;
+        border: 5px solid #FFF;
+        animation: prixClipFix 2s linear infinite ;
+      }
+      .loader::after{
+        border-color: #FF3D00;
+        animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
+        inset: 6px;
+      }
+
+      @keyframes rotate {
+        0%   {transform: rotate(0deg)}
+        100%   {transform: rotate(360deg)}
+      }
+
+      @keyframes prixClipFix {
+          0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+          25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+          50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+          75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+          100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+      }
 
 /*---------------------------------------
   CUSTOM ICON COLOR               
@@ -897,12 +972,9 @@ strong {
   transition: background 0.2s, color 0.2s;
 }
 
-
-
 .social-icon-link span {
   display: block;
 }
-
 
 /*---------------------------------------
   SPONSOR SECTION               
@@ -919,26 +991,24 @@ strong {
     flex-direction: column;
   }
   .sponsor {
-  width: 40vw;
-}
-.bigSponsor {
-  width: 95vw;
-  padding: 40px;
-}
-
+    width: 40vw;
+  }
+  .bigSponsor {
+    width: 95vw;
+    padding: 40px;
+  }
 }
 @media screen and (min-width: 991px) {
   .sponsorBox div {
     display: flex;
   }
   .sponsor {
-  height: 13vh;
-  padding: 0 80px;
-}
-.bigSponsor {
-  height: 30vh;
-}
-
+    height: 13vh;
+    padding: 0 80px;
+  }
+  .bigSponsor {
+    height: 30vh;
+  }
 }
 
 /*---------------------------------------
@@ -953,11 +1023,11 @@ strong {
 .preThanimaBox div img {
   height: 100%;
 }
-@media screen and (min-width: 991px){
+@media screen and (min-width: 991px) {
   .preThanimaBox div {
-  height: 40vh;
-  margin: 3px;
-}
+    height: 40vh;
+    margin: 3px;
+  }
 }
 @media screen and (max-width: 991px) {
   .preThanimaBox {

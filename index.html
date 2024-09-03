@@ -34,7 +34,14 @@ https://templatemo.com/tm-583-festava-live
 
 <body>
 
+    <div id="loading" class="w-full h-full fixed top-0 left-0 bg-black opacity-95 z-50">
+        <div class="flex justify-center items-center m42">
+            <div class="loader" id="loader"></div>
+        </div>
+    </div>
+
     <main>
+
 
         <header class="site-header">
             <div class="container">
@@ -352,6 +359,13 @@ T e m p l a t e M o
 -->
 
     <!-- JAVASCRIPT FILES -->
+    <script>
+        window.addEventListener("load", (event) => {
+            setTimeout(() => {
+                document.getElementById("loading").style.display = "none";
+            }, 100);
+        });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>

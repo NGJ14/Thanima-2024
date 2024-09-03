@@ -30,4 +30,4 @@
   
   })(window.jQuery);
 
-
+ $("#loader").addClass("hide-loader");
