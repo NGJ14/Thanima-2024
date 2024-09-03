@@ -1092,7 +1092,7 @@ strong {
 
 .infinite_slide {
   overflow: hidden;
-  background: red;
+  background: black;
   padding-top: 10px;
   white-space: nowrap;
   position: relative;
