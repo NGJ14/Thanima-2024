@@ -925,12 +925,15 @@ strong {
   justify-content: center;
   align-items: center;
 }
-.preThanimaBox div {
+
+.preThanimaBox div img {
+  height: 100%;
+}
+@media screen and (min-width: 991px){
+  .preThanimaBox div {
   height: 40vh;
   margin: 3px;
 }
-.preThanimaBox div img {
-  height: 100%;
 }
 @media screen and (max-width: 991px) {
   .preThanimaBox {
@@ -941,7 +944,7 @@ strong {
     margin: 5px 0;
   }
   .preThanimaBox div img {
-    max-width: 70vw;
+    max-width: 80vw;
   }
 }
 
