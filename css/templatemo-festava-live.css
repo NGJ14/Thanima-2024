@@ -892,15 +892,16 @@ strong {
 }
 .sponsorBox div {
   display: flex;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
 }
 .sponsor {
-  height: 15vh;
+  height: 18vh;
   padding: 0 40px;
 }
 .bigSponsor {
-  height: 40vh;
+  height: 38vh;
 }
 @media screen and (max-width: 991px) {
   .sponsorBox div {
