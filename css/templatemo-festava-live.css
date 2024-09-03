@@ -296,8 +296,7 @@ strong {
   align-items: center;
 }
 
-
-.tendulkar{
+.tendulkar {
   filter: blur(5px);
 }
 /*---------------------------------------
@@ -1035,7 +1034,6 @@ strong {
   align-items: center;
 }
 @media screen and (min-width: 991px) {
-
   .preThanimaBox div img {
     height: 40vh;
     margin: 3px;
@@ -1052,6 +1050,85 @@ strong {
   .preThanimaBox div img {
     max-width: 80vw;
   }
+}
+
+.galleryImageBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 3vh;
+}
+.galleryImageBox img {
+  margin: 3px;
+  border-radius: 6px;
+}
+@media screen and (max-width: 991px) {
+  .galleryImageBox img {
+    width: 40vw;
+  }
+}
+@media screen and (min-width: 991px) {
+  .galleryImageBox img {
+    height: 33vh;
+  }
+}
+
+/*---------------------------------------
+  INFINITE SCROLL
+-----------------------------------------*/
+@keyframes slide {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.infinite_slide {
+  overflow: hidden;
+  background: #000;
+  padding-top: 10px;
+  white-space: nowrap;
+  position: relative;
+  border-bottom: 2px white solid;
+  border-top: 2px white solid;
+}
+
+.infinite_slide:before,
+.infinite_slide:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.infinite_slide:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+
+.infinite_slide:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+
+.infi-slide {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  animation: 18s linear slide infinite alternate;
+}
+.infi-slide p{
+  color: white;
+  font-weight: 500;
+}
+.infi-slide img {
+  height: 30px;
+  margin: 0 30px;
 }
 
 /*---------------------------------------
