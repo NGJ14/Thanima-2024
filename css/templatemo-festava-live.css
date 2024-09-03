@@ -1135,6 +1135,53 @@ strong {
   margin: 0 30px;
 }
 
+
+.gallery_slide {
+  overflow: hidden;
+  /* background: black; */
+  padding-top: 10px;
+  white-space: nowrap;
+  position: relative;
+  border-bottom: 2px white solid;
+  border-top: 2px white solid;
+}
+
+.gallery_slide:before,
+.gallery_slide:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.gallery_slide:before {
+  left: 0;
+  /* background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); */
+}
+
+.gallery_slide:after {
+  right: 0;
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); */
+}
+
+.gallery-slide {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  animation: 18s linear slide infinite alternate;
+}
+.gallery-slide p{
+  color: white;
+  font-weight: 500;
+}
+.gallery-slide img {
+  height: 55vh;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
