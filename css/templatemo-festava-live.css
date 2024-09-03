@@ -893,20 +893,11 @@ strong {
 /*---------------------------------------
   SPONSOR SECTION               
 -----------------------------------------*/
-.sponsorBox {
-}
 .sponsorBox div {
   display: flex;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
-}
-.sponsor {
-  height: 18vh;
-  padding: 0 40px;
-}
-.bigSponsor {
-  height: 38vh;
 }
 @media screen and (max-width: 991px) {
   .sponsorBox div {
@@ -914,13 +905,26 @@ strong {
     flex-direction: column;
   }
   .sponsor {
-  /* height: 25vh; */
-  max-width: 80vw;
+  width: 40vw;
 }
 .bigSponsor {
-  /* height: 40vh; */
-  max-width: 80vw;
+  width: 95vw;
+  padding: 40px;
 }
+
+}
+@media screen and (min-width: 991px) {
+  .sponsorBox div {
+    display: flex;
+  }
+  .sponsor {
+  height: 13vh;
+  padding: 0 80px;
+}
+.bigSponsor {
+  height: 30vh;
+}
+
 }
 
 /*---------------------------------------
