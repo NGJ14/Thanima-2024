@@ -249,7 +249,7 @@
                         <h2 class="mb-4">Gallery</h1>
                     </div>
                     <div class="galleryImageBox">
-                        
+
                         <img src="./images/gallery/t10.png" alt="">
                         <img src="./images/gallery/t9.png" alt="">
                         <img src="./images/gallery/t8.png" alt="">
@@ -536,7 +536,7 @@
 
 
         <div class="copyright">
-            &copy Copyright 2024 Thanima Team 
+            &copy Copyright 2024 Thanima Team
         </div>
 
     </footer>
@@ -548,7 +548,16 @@
             }, 100);
         });
     </script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.querySelector('.custom-video');
+            if (video) {
+                video.play().catch(error => {
+                    console.log('Autoplay prevented on iOS: ', error);
+                });
+            }
+        });
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
