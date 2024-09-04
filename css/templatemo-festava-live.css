@@ -1091,7 +1091,7 @@ strong {
 .infinite_slide {
   overflow: hidden;
   background: black;
-  padding-top: 10px;
+  padding-top: 6px;
   white-space: nowrap;
   position: relative;
   border-bottom: 2px white solid;
@@ -1293,7 +1293,7 @@ strong {
 }
 
 #section_6{
-  background: #555;
+  background: #111;
 }
 .teamBox div{
   display: flex;
@@ -1318,15 +1318,19 @@ strong {
   border: 5px solid #222;
 }
 .copyright{
-  color: white;
+  color: rgb(217, 217, 217);
   padding-top: 30px;
   border-top: 1px solid #555;
+  font-size: 1.2rem;
 }
 .studentCo{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.studentCo h3{
+  color:rgb(163, 163, 163);
 }
 .studentList{
   padding-top: 4vh;
@@ -1336,10 +1340,12 @@ flex-wrap: wrap;
 justify-content: center;
 }
 .studentList div{
-  margin: 30px;
+  margin: 10px 30px;
 }
 .studentList div h5{
   text-align: center;
+  color:#151515;
+  color: #dd591b;
 }
 .studentList div ul li{
   color: rgb(212, 212, 212);
@@ -1347,5 +1353,12 @@ justify-content: center;
 @media screen and (max-width: 991px){
   .studentList div{
     width: 32%;
+    margin: 5px 25px;
+}
+.teamBox div div img{
+  height: 40vw;
+}
+.teamBox div div p{
+  width: 40vw;
 }
 }
