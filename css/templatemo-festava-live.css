@@ -1066,11 +1066,17 @@ strong {
   border-radius: 6px;
 }
 @media screen and (max-width: 991px) {
+  .galleryImageBox{
+    display: none;
+  }
   .galleryImageBox img {
     width: 40vw;
   }
 }
 @media screen and (min-width: 991px) {
+  .gallery_slide{
+    display: none;
+  }
   .galleryImageBox img {
     height: 33vh;
   }
@@ -1164,7 +1170,7 @@ strong {
   /* background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); */
 }
 
-.gallery-slide {
+/* .gallery-slide {
   display: inline-block;
   display: flex;
   justify-content: center;
@@ -1186,7 +1192,7 @@ strong {
   height: 30vh;
   border-radius: 10px;
   margin: 0 10px;
-}
+} */
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1361,4 +1367,91 @@ justify-content: center;
 .teamBox div div p{
   width: 40vw;
 }
+}
+
+.gallery-slide {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.gallery-slide {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+}
+
+.gallery-slide > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 80vw;
+  animation: display 10s infinite;
+  margin: 0 auto;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+img:nth-child(6) {
+  animation-delay: 10s;
+}
+img:nth-child(7) {
+  animation-delay:12s;
+}
+img:nth-child(8) {
+  animation-delay: 14s;
+}
+img:nth-child(9) {
+  animation-delay: 16s;
+}
+img:nth-child(10) {
+  animation-delay: 18s;
+}
+img:nth-child(11) {
+  animation-delay: 20s;
+}
+img:nth-child(12) {
+  animation-delay: 22s;
+}
+img:nth-child(13) {
+  animation-delay: 24s;
+}
+img:nth-child(14) {
+  animation-delay: 26s;
+}
+img:nth-child(15) {
+  animation-delay: 28s;
 }
