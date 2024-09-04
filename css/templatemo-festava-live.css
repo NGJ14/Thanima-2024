@@ -1293,7 +1293,7 @@ strong {
 }
 
 #section_6{
-  background: #444;
+  background: #555;
 }
 .teamBox div{
   display: flex;
@@ -1343,4 +1343,9 @@ justify-content: center;
 }
 .studentList div ul li{
   color: rgb(212, 212, 212);
+}
+@media screen and (max-width: 991px){
+  .studentList div{
+    width: 32%;
+}
 }
