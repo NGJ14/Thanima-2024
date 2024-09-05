@@ -1340,7 +1340,7 @@ strong {
 }
 .studentList{
   padding-top: 4vh;
-  width: 90%;
+  /* width: 90%; */
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
