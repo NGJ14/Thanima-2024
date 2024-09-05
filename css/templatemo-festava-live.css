@@ -1476,3 +1476,12 @@ img:nth-child(15) {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 991px){
+  .about-section{
+    padding: 20px 12px;
+    text-align: center;
+  }
+  .about-section h2{
+    text-align: center;
+  }
+}
