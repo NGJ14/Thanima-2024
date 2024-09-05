@@ -991,28 +991,12 @@ strong {
 /*---------------------------------------
   SPONSOR SECTION               
 -----------------------------------------*/
-.sponsorBox div {
-  display: flex;
-  margin-top: 50px;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 991px) {
-  .sponsorBox div {
-    display: flex;
-    flex-direction: column;
-  }
-  .sponsor {
-    width: 40vw;
-  }
-  .bigSponsor {
-    width: 95vw;
-    padding: 40px;
-  }
-}
 @media screen and (min-width: 991px) {
   .sponsorBox div {
     display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
   }
   .sponsor {
     height: 13vh;
@@ -1022,6 +1006,23 @@ strong {
     height: 30vh;
   }
 }
+@media screen and (max-width: 990px) {
+  .sponsorBox div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsor {
+    width: 40vw;
+  }
+  .bigSponsor {
+    width: 95vw;
+    padding: 40px;
+  }
+}
+
 
 /*---------------------------------------
   PRE-THANIMA SECTION               
