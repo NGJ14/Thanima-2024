@@ -685,6 +685,7 @@ strong {
 /*---------------------------------------
   ARTISTS              
 -----------------------------------------*/
+
 .artists-thumb {
   position: relative;
   overflow: hidden;
@@ -695,7 +696,6 @@ strong {
   border-radius: var(--border-radius-medium);
   display: block;
   width: 100%;
-  filter: blur(20px);
 }
 
 .artists-thumb:hover .artists-hover {
@@ -1484,4 +1484,10 @@ img:nth-child(15) {
   .about-section h2{
     text-align: center;
   }
+}
+.guestInfo{
+  display: flex;
+}
+.sachinImg{
+  width: 50vw;
 }
